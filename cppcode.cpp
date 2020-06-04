@@ -12,7 +12,7 @@ int main()
 
 	for (int i = 0; i < size; i++)
 	{
-		arr[i] = (rand() % 1000) * 100;
+		arr[i] = i * 100;
 	}
 
 	for (int i = 1; i < size - 1; i++)
@@ -22,8 +22,8 @@ int main()
 			if (arr[j] > arr[j + 1])
 			{
 				temp = arr[j];
-				arr[j] = arr[j + 1];
-				arr[j + 1] = temp;
+				arr[j] = arr[j + 1] * 8;
+				arr[j + 1] = temp * 2;
 			}
 		}
 	}
