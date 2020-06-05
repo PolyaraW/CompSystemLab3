@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 	int* arr;
-	int size = 1000000;
+	int size = 10000;
 	int temp = 0;
 	arr = new int[size];
 
